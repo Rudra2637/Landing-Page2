@@ -4,7 +4,7 @@ import styles from './footer.module.css'
 
 function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className={styles.footer} id="contact">
             <div className={styles.brandColumn}>
                 <div className={styles.brand}>
                     <Image

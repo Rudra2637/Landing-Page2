@@ -41,7 +41,6 @@ function Hero() {
                     <h3>Calathea plant</h3>
                     <div className={styles.productFooter}>
                         <button>Buy Now</button>
-                        <span className={styles.cardArrow}>{'>'}</span>
                     </div>
                     <div className={styles.dots}>
                         <span></span>
@@ -55,7 +54,7 @@ function Hero() {
                 />
             </section>
 
-            <section className={styles.trendySection}>
+            <section className={styles.trendySection} id="plant-types">
                 <h2>Our Trendy plants</h2>
                 <Trendy
                     path="/plant2.png"

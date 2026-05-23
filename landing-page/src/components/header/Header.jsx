@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './header.module.css'
 
 function Header() {
@@ -21,10 +22,20 @@ function Header() {
 
             <div className={styles.linksWrap}>
                 <ul className={styles.links}>
-                    <li>Home</li>
-                    <li>Plant Types<span className={styles.chevron}>⌄</span></li>
-                    <li>More</li>
-                    <li>Contact</li>
+                    <li>
+                        <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link href="#plant-types">
+                            Plant Types<span className={styles.chevron}></span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="">More</Link>
+                    </li>
+                    <li>
+                        <Link href="/#contact">Contact</Link>
+                    </li>
                 </ul>
             </div>
 
