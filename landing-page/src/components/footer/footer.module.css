@@ -1,0 +1,162 @@
+.footer {
+    display: grid;
+    grid-template-columns: minmax(280px, 1.4fr) minmax(170px, 0.7fr) minmax(310px, 1.25fr);
+    gap: clamp(2.5rem, 7vw, 7.8rem);
+    width: 100%;
+    padding: 5rem clamp(2rem, 4vw, 4.4rem) 4.7rem;
+    border-bottom: 1px solid rgba(245, 245, 241, 0.75);
+    background: #1B2316;
+    color: #f5f5f1;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.brand h2 {
+    margin: 0;
+    color: rgba(245, 245, 241, 0.86);
+    font-size: clamp(2rem, 3vw, 2.65rem);
+    font-weight: 800;
+    line-height: 1;
+}
+
+.brandColumn > p {
+    max-width: 415px;
+    margin: 2.2rem 0 0;
+    color: rgba(245, 245, 241, 0.95);
+    font-size: 1.18rem;
+    font-weight: 500;
+    line-height: 1.22;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    margin-top: 5rem;
+}
+
+.socials span {
+    color: rgba(245, 245, 241, 0.96);
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.linksColumn,
+.subscribeColumn {
+    padding-top: 0.35rem;
+}
+
+.linksColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.linksColumn h3,
+.subscribeColumn h3 {
+    margin: 0 0 2.1rem;
+    color: rgba(245, 245, 241, 0.96);
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.linksColumn a {
+    color: rgba(245, 245, 241, 0.95);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.linksColumn a + a {
+    margin-top: 1.35rem;
+}
+
+.form {
+    display: flex;
+    width: min(100%, 420px);
+    height: 50px;
+    border: 2px solid rgba(245, 245, 241, 0.88);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form input {
+    min-width: 0;
+    flex: 1;
+    padding: 0 1.25rem;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #f5f5f1;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form input::placeholder {
+    color: rgba(245, 245, 241, 0.72);
+}
+
+.form button {
+    min-width: 126px;
+    padding: 0 1rem;
+    border: 0;
+    background: #f5f5f1;
+    color: #1B2316;
+    font-size: 0.86rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.copy {
+    margin: 8rem 0 0;
+    color: rgba(245, 245, 241, 0.95);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subscribeColumn {
+        grid-column: 1 / -1;
+    }
+
+    .copy {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .footer {
+        grid-template-columns: 1fr;
+        padding-inline: 1.4rem;
+    }
+
+    .socials {
+        margin-top: 3rem;
+    }
+
+    .form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .form input,
+    .form button {
+        height: 48px;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './hero.module.css'
 import Image from 'next/image'
-import ReviewCard from '../customerReview/ReviewCard'
+import ReviewCard from '../reviewTemplate/ReviewCard'
 import Trendy from '../TrendyPlants/Trendy'
 
 function Hero() {
