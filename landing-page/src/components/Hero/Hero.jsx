@@ -49,9 +49,31 @@ function Hero() {
                     </div>
                 </div>
 
-                <ReviewCard imagePath="/person1.jpg" name="alena Patel"
+                {/* <ReviewCard imagePath="/person1.jpg" name="alena Patel"
                     review="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..."
-                />
+                /> */}
+                <div className={styles.card}>
+                    <div className={styles.header}>
+                        <Image
+                            src="/person1.jpg"
+                            alt="alena Patel"
+                            width={42}
+                            height={42}
+                            className={styles.avatar}
+                        />
+                        <div>
+                            <h3>alena Patel</h3>
+                            <Image
+                                src="/stars.png"
+                                alt="Five star rating"
+                                width={78}
+                                height={11}
+                                className={styles.stars}
+                            />
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...</p>
+                </div>
             </section>
 
             <section className={styles.trendySection} id="plant-types">
